@@ -1,0 +1,13 @@
+# Chave do Brawl Stars: nunca vai para o GitHub
+token.txt
+.env
+
+# Arquivos gerados ao rodar os scripts
+grafico_demo.png
+jogador.json
+__pycache__/
+
+# Ambientes virtuais e sistema
+.venv/
+venv/
+.DS_Store

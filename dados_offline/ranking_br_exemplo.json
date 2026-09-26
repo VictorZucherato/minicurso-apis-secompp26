@@ -1,0 +1,139 @@
+{
+  "items": [
+    {
+      "tag": "#2V9L08VC",
+      "name": "👑EL|TyagoElite",
+      "nameColor": "0xfff05637",
+      "icon": {
+        "id": 28000080
+      },
+      "trophies": 267516,
+      "rank": 1,
+      "club": {
+        "name": "👑Elite Legends"
+      }
+    },
+    {
+      "tag": "#2JR09JGYG",
+      "name": "Dragão Azul",
+      "nameColor": "0xfff05637",
+      "icon": {
+        "id": 28000349
+      },
+      "trophies": 261734,
+      "rank": 2,
+      "club": {
+        "name": "👑Elite Legends"
+      }
+    },
+    {
+      "tag": "#2JY0LJP8Y",
+      "name": "🌴HM|Trukio🏀👑",
+      "nameColor": "0xffffffff",
+      "icon": {
+        "id": 28001337
+      },
+      "trophies": 260964,
+      "rank": 3,
+      "club": {
+        "name": "🌴|<c3>HM</c>"
+      }
+    },
+    {
+      "tag": "#2YUJVUC2",
+      "name": "🌴HM|Gui 🇺🇾👑",
+      "nameColor": "0xfff9c908",
+      "icon": {
+        "id": 28000500
+      },
+      "trophies": 258069,
+      "rank": 4,
+      "club": {
+        "name": "🌴|<c3>HM</c>"
+      }
+    },
+    {
+      "tag": "#L2Q0U8C9U",
+      "name": "👑EL|Ž!ҜΔ🍁",
+      "nameColor": "0xfff05637",
+      "icon": {
+        "id": 28000976
+      },
+      "trophies": 253425,
+      "rank": 5,
+      "club": {
+        "name": "👑Elite Legends"
+      }
+    },
+    {
+      "tag": "#GR80JGUG",
+      "name": "Kadu🤍Bel",
+      "nameColor": "0xfff9c908",
+      "icon": {
+        "id": 28000183
+      },
+      "trophies": 241582,
+      "rank": 6,
+      "club": {
+        "name": "Red Titans"
+      }
+    },
+    {
+      "tag": "#8RVRL9QJ8",
+      "name": "LB|Montalvão×᷼×",
+      "nameColor": "0xffffffff",
+      "icon": {
+        "id": 28000976
+      },
+      "trophies": 234098,
+      "rank": 7,
+      "club": {
+        "name": "ŁƁ | ĄƁ§ØŁÜŢ 🖤"
+      }
+    },
+    {
+      "tag": "#GP2QRRR",
+      "name": "BITO",
+      "nameColor": "0xffcb5aff",
+      "icon": {
+        "id": 28001314
+      },
+      "trophies": 233282,
+      "rank": 8,
+      "club": {
+        "name": "BRA BOSS PRO"
+      }
+    },
+    {
+      "tag": "#22UYLY8CQ",
+      "name": "🌴HM|VALENTE🔰",
+      "nameColor": "0xffff9727",
+      "icon": {
+        "id": 28001349
+      },
+      "trophies": 228122,
+      "rank": 9,
+      "club": {
+        "name": "🌴|<c3>HM</c>"
+      }
+    },
+    {
+      "tag": "#JQVQYVY",
+      "name": "GdŹ | VTzim",
+      "nameColor": "0xffffffff",
+      "icon": {
+        "id": 28001314
+      },
+      "trophies": 227650,
+      "rank": 10,
+      "club": {
+        "name": "Gangue Do Zó"
+      }
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "after": "eyJwb3MiOjEwfQ"
+    }
+  }
+}
