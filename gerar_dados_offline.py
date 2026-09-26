@@ -17,7 +17,7 @@ import time
 
 import requests
 
-TAG = "#2002JY88"
+TAG = "#RGVU2J"
 PASTA = os.path.dirname(os.path.abspath(__file__))
 PASTA_SAIDA = os.path.join(PASTA, "dados_offline")
 BASE_BRAWL = "https://api.brawlstars.com/v1"

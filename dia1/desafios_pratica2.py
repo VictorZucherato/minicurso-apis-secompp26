@@ -19,7 +19,7 @@ def buscar(url):
 
 
 # Desafio 1: troque pela sua tag (no jogo, ela aparece no seu perfil)
-tag = "#2002JY88"
+tag = "#RGVU2J"
 tag_url = tag.replace("#", "%23")
 
 # Desafio 2: o brawler com mais troféus

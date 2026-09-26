@@ -20,7 +20,7 @@ print(resposta.status_code)
 print(resposta.json())
 
 # 2. O problema da #: na URL, a # vira %23
-tag = "#2002JY88"
+tag = "#RGVU2J"
 tag_url = tag.replace("#", "%23")
 url = f"https://api.brawlstars.com/v1/players/{tag_url}"
 

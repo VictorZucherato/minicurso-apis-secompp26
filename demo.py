@@ -15,7 +15,7 @@ import os
 import pandas as pd
 import requests
 
-TAG = "#2002JY88"
+TAG = "#RGVU2J"
 PASTA = os.path.dirname(os.path.abspath(__file__))
 ARQUIVO_OFFLINE = os.path.join(PASTA, "dados_offline", "jogador_exemplo.json")
 
