@@ -2,6 +2,12 @@
 
 Minicurso da SECOMPP26 (FCT/Unesp), com Felipe Giovaneli e Victor Zucherato.
 
+Link curto deste repositório: **tinyurl.com/secompp-apis**
+
+## Faltou na segunda?
+
+Abra `dados_offline/jogador_exemplo.json`, clique no botão de download (canto superior direito do arquivo) e salve na sua pasta com o nome `jogador.json`. É com ele que a Prática 3 começa.
+
 ## Como pegar o código
 
 - Para copiar um arquivo: clique nele, depois no botão de copiar (canto superior direito do código)
@@ -18,6 +24,9 @@ Minicurso da SECOMPP26 (FCT/Unesp), com Felipe Giovaneli e Victor Zucherato.
 | `dia1/02_brawlstars.py` | Prática 2 completa (Brawl Stars com chave) |
 | `dia1/desafios_pratica2.py` | Respostas dos desafios da Prática 2 |
 | `dia1/plano_c_offline.py` | A Prática 2 sem internet, lendo o `jogador_exemplo.json` |
+| `dia2/03_pandas.py` | Prática 3 completa: o `jogador.json` vira tabela com o pandas |
+| `dia2/desafios_pratica3.py` | Respostas dos desafios da Prática 3 |
+| `dia2/04_desafio_livre_exemplo.py` | Um desafio livre completo, com a Harry Potter API |
 | `dados_offline/` | Respostas reais das APIs, salvas para usar sem internet |
 | `gerar_dados_offline.py` | Ferramenta dos instrutores: atualiza a pasta `dados_offline/` |
 
