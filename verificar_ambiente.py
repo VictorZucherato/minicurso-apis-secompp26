@@ -16,7 +16,9 @@ import sys
 import urllib.error
 import urllib.request
 
-# IPs cadastrados na chave do minicurso (se criar uma chave nova, atualize aqui)
+# IP do laboratório, cadastrado na chave do minicurso (se criar uma chave nova, atualize aqui).
+# A chave também aceita os IPs de casa dos instrutores, que ficam fora do GitHub:
+# por isso, quando a chave funciona na máquina, o aviso de IP da seção 4 é retirado.
 IPS_DA_CHAVE = ["200.145.184.170"]
 
 OK = "[ OK ]"
@@ -62,6 +64,16 @@ def erro_de_certificado(erro):
     return "CERTIFICATE_VERIFY_FAILED" in str(erro) or "SSL" in type(erro).__name__
 
 
+def comando_python():
+    """O caminho do Python que está rodando agora, pronto para colar no terminal."""
+    executavel = sys.executable
+    if " " not in executavel:
+        return executavel
+    if platform.system() == "Windows":
+        return f'& "{executavel}"'  # o & é para o PowerShell, o terminal padrão do VS Code no Windows
+    return f'"{executavel}"'
+
+
 def ler_token():
     """Lê a chave de BRAWL_TOKEN ou do token.txt (aceita só a chave ou a linha TOKEN = "...")."""
     texto = os.getenv("BRAWL_TOKEN", "")
@@ -88,7 +100,9 @@ if versao >= (3, 10):
     print(f"{OK} Python {versao.major}.{versao.minor}.{versao.micro}")
 else:
     print(f"{FALHA} Python {versao.major}.{versao.minor} (precisa ser 3.10 ou superior)")
-    registrar(problemas, "Python abaixo da versão 3.10")
+    print("      Já instalou um Python mais novo? Então o editor está usando outro Python:")
+    print("      Ctrl+Shift+P (no Mac, Cmd+Shift+P) > Python: Select Interpreter")
+    registrar(problemas, "Python abaixo da versão 3.10 (confira o Executável Python na seção 1)")
 
 # ------------------------------------------------------------------
 titulo("2. BIBLIOTECAS")
@@ -98,17 +112,25 @@ bibliotecas = {
     "matplotlib": False,  # opcional (gráfico do dia 2)
 }
 
+faltando = []
 for nome, obrigatoria in bibliotecas.items():
     try:
         modulo = importlib.import_module(nome)
         print(f"{OK} {nome} {getattr(modulo, '__version__', '')}")
     except ImportError:
+        faltando.append(nome)
         if obrigatoria:
             print(f"{FALHA} {nome} NÃO instalada")
             registrar(problemas, f"Biblioteca {nome} não instalada para este usuário")
         else:
             print(f"{AVISO} {nome} não instalada (opcional)")
             registrar(avisos, f"Biblioteca {nome} não instalada (opcional)")
+
+if faltando:
+    # O pip do terminal pode pertencer a outro Python: este comando instala neste
+    print("      Para instalar no Python que está rodando agora, cole no terminal:")
+    print(f"      {comando_python()} -m pip install {' '.join(faltando)}")
+    print("      Se já instalou e continua faltando, o editor está usando outro Python")
 
 # ------------------------------------------------------------------
 titulo("3. INTERNET E APIs")
@@ -139,6 +161,7 @@ for nome, url in testes.items():
 
 # ------------------------------------------------------------------
 titulo("4. IP PÚBLICO (a chave do Brawl Stars depende dele)")
+ip_publico = None
 try:
     status, corpo = requisitar("https://api.ipify.org?format=json")
     ip_publico = json.loads(corpo)["ip"]
@@ -198,6 +221,12 @@ else:
         )
         if status == 200:
             print(f"{OK} A chave funciona nesta máquina")
+            aviso_ip = f"IP {ip_publico} fora da chave do minicurso (avisar um instrutor)"
+            if aviso_ip in avisos:
+                # A lista IPS_DA_CHAVE só tem o IP do laboratório. Se a chave
+                # funcionou, este IP também está cadastrado nela
+                avisos.remove(aviso_ip)
+                print(f"      Então o IP {ip_publico} também está na chave: ignore o aviso da seção 4")
         else:
             try:
                 detalhe = json.loads(corpo)
