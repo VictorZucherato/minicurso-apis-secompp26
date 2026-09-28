@@ -17,6 +17,7 @@ Abra `dados_offline/jogador_exemplo.json`, clique no botão de download (canto s
 
 | Arquivo | Para que serve |
 |---|---|
+| `Cola rápida - Consumo de APIs e Análise de Dados na Prática.pdf` | A cola de uma página: os comandos dos dois dias, os erros mais comuns e as APIs sem chave para o desafio livre |
 | `verificar_ambiente.py` | Confere se o computador está pronto para o minicurso |
 | `demo.py` | A demonstração da abertura: API, tabela, perguntas e gráfico |
 | `dia1/01_primeira_requisicao.py` | Prática 1 completa (ViaCEP) |
@@ -37,11 +38,13 @@ Abra `dados_offline/jogador_exemplo.json`, clique no botão de download (canto s
 
 ## Para usar no seu notebook
 
-Instale as bibliotecas uma vez:
+Instale as bibliotecas uma vez, pelo mesmo Python que roda os scripts:
 
 ```
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
+
+No Mac, troque `python` por `python3`. Se o VS Code continuar dizendo que falta uma biblioteca, ele está usando outro Python: Ctrl+Shift+P (no Mac, Cmd+Shift+P) > **Python: Select Interpreter**. O `verificar_ambiente.py` mostra qual Python está rodando e o comando certo para instalar nele.
 
 ## Sobre a chave do Brawl Stars
 
