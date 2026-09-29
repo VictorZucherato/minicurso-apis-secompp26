@@ -20,6 +20,7 @@ Abra `dados_offline/jogador_exemplo.json`, clique no botão de download (canto s
 | `Cola rápida - Consumo de APIs e Análise de Dados na Prática.pdf` | A cola de uma página: os comandos dos dois dias, os erros mais comuns e as APIs sem chave para o desafio livre |
 | `verificar_ambiente.py` | Confere se o computador está pronto para o minicurso |
 | `demo.py` | A demonstração da abertura: API, tabela, perguntas e gráfico |
+| `dia1/slides_dia1.pdf` | Os slides do dia 1: teorias, práticas e os bônus do fim |
 | `dia1/01_primeira_requisicao.py` | Prática 1 completa (ViaCEP) |
 | `dia1/desafios_pratica1.py` | Respostas dos desafios da Prática 1 |
 | `dia1/02_brawlstars.py` | Prática 2 completa (Brawl Stars com chave) |
