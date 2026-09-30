@@ -26,6 +26,7 @@ Abra `dados_offline/jogador_exemplo.json`, clique no botão de download (canto s
 | `dia1/02_brawlstars.py` | Prática 2 completa (Brawl Stars com chave) |
 | `dia1/desafios_pratica2.py` | Respostas dos desafios da Prática 2 |
 | `dia1/plano_c_offline.py` | A Prática 2 sem internet, lendo o `jogador_exemplo.json` |
+| `dia2/slides_dia2.pdf` | Os slides do dia 2: revisão, análise de dados com pandas e o desafio livre |
 | `dia2/03_pandas.py` | Prática 3 completa: o `jogador.json` vira tabela com o pandas |
 | `dia2/desafios_pratica3.py` | Respostas dos desafios da Prática 3 |
 | `dia2/04_desafio_livre_exemplo.py` | Um desafio livre completo, com a Harry Potter API |
@@ -49,6 +50,6 @@ No Mac, troque `python` por `python3`. Se o VS Code continuar dizendo que falta 
 
 ## Sobre a chave do Brawl Stars
 
-- A chave usada em aula só funciona no laboratório e será apagada ao fim do minicurso
+- A chave usada em aula só funcionava no laboratório e foi apagada ao fim do minicurso
 - Para continuar em casa, crie a sua em [developer.brawlstars.com](https://developer.brawlstars.com), cadastrando o IP da sua casa
 - Nunca publique a sua chave no GitHub. Os scripts dos instrutores leem a chave de um arquivo `token.txt` ou da variável `BRAWL_TOKEN`, e o `token.txt` está no `.gitignore`
